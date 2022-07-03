@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .center{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .stick {
+             border-radius: 4px 4px 0 0;
+        }
+        input[type="range"] {
+		outline: 0;
+		border: 0;
+		border-radius: 500px;
+		width: 400px;
+		max-width: 100%;
+		margin: 24px 0 16px;
+		transition: box-shadow 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="container"></div>
+        <input type="range" value="0">         
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
